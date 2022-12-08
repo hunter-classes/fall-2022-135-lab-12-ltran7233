@@ -10,6 +10,12 @@ int main()
 	{
 		std::cout << a.at(i) << " ";
 	}
-	std::cout << "\n";
+	std::cout << "\nTask B: " << std::endl;
+	std::vector<int> b{1,2,-1,3,4,-1,6};
+	std::vector<int> ba = goodVibes(b);
+	for (int i=0; i<ba.size(); i++)
+	{
+		std::cout << ba.at(i) << " ";
+	}
 	return 0;
 }
