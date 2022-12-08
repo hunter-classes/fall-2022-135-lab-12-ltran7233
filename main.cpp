@@ -10,6 +10,7 @@ int main()
 	{
 		std::cout << a.at(i) << " ";
 	}
+	
 	std::cout << "\nTask B: " << std::endl;
 	std::vector<int> b{1,2,-1,3,4,-1,6};
 	std::vector<int> ba = goodVibes(b);
@@ -17,6 +18,7 @@ int main()
 	{
 		std::cout << ba.at(i) << " ";
 	}
+	
 	std::cout << "\nTask C: " << std::endl;
 	std::vector<int> v1{1,2,3};
 	std::vector<int> v2{4,5};
@@ -27,5 +29,16 @@ int main()
 		std::cout << v1.at(i) << " ";
 	}
 	std::cout << "\nIs v2 empty: " << v2.empty() << std::endl;
+	
+	std::cout << "Task D: " << std::endl;
+	std::vector<int> v3{1,2,3};
+	std::vector<int> v4{4,5};
+	std::vector<int> sum = sumPairWise(v3, v4);
+	std::cout << "Combined Sum Array: " << std::endl;
+	for (int i=0; i<sum.size(); i++)
+	{
+		std::cout << sum.at(i) << " ";
+	}
+	std::cout << "\n";
 	return 0;
 }
