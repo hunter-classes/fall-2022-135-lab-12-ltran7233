@@ -36,11 +36,11 @@ void gogeta(std::vector<int> &goku, std::vector<int> &vegeta)
 std::vector<int> sumPairWise(const std::vector<int> &v1, const std::vector<int> &v2)
 {
 	std::vector<int> sum;
+	std::vector<int> big = v1;
 	int pair = 0;
 	if (v1.size()!=v2.size())
 	{
 		std::vector<int> small;
-		std::vector<int> big;
 		if (v1.size()<v2.size())
 		{
 			small = v1;
@@ -56,7 +56,7 @@ std::vector<int> sumPairWise(const std::vector<int> &v1, const std::vector<int> 
 			small.push_back(0);
 		}
 	}
-	for (int i=0; i<v1.size(); i++)
+	for (int i=0; i<big.size(); i++)
 	{
 		pair = v1[i] + v2[i];
 		sum.push_back(pair);
