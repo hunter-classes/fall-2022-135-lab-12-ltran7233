@@ -2,4 +2,4 @@
 
 #include <vector>
 
-vector<int> makeVector(int n);
+std::vector<int> makeVector(int n);
